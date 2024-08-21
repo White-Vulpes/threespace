@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b11e23e5.css",
+    "main.js": "/static/js/main.238525b2.js",
+    "static/media/bgmusic.mp3": "/static/media/bgmusic.6e65d380c6332a54b981.mp3",
+    "static/media/Griffiths.otf": "/static/media/Griffiths.d37c5b1f518db9b96ee4.otf",
+    "index.html": "/index.html",
+    "main.b11e23e5.css.map": "/static/css/main.b11e23e5.css.map",
+    "main.238525b2.js.map": "/static/js/main.238525b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b11e23e5.css",
+    "static/js/main.238525b2.js"
+  ]
+}
