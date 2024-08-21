@@ -7,7 +7,6 @@ import gsap from "gsap";
 function Background() {
   const sphereRef = useRef(null);
   const orbitRef = useRef(null);
-  let mDown = false;
 
   useEffect(() => {
     let frameId;
@@ -67,50 +66,52 @@ function Background() {
     }
   };
 
-  const onMouseDown = (event) => {
-    mDown = true;
-    gsap.to(sphereRef.current.scale, {
-      x: 22,
-      y: 22,
-      z: 22,
-      duration: 1,
-      ease: "power2.out",
-    });
-  };
-
-  const onMouseUp = (event) => {
-    mDown = false;
-    gsap.to(sphereRef.current.scale, {
-      x: 27,
-      y: 27,
-      z: 27,
-      duration: 1,
-      ease: "power2.out",
-    });
-  };
-
-  const onMouseMove = (event) => {
-    if (!mDown) {
-      const { clientX, clientY } = event;
-      const { innerWidth, innerHeight } = window;
-      const mouseX = (clientX / innerWidth) * 2 - 1;
-      const mouseY = -(clientY / innerHeight) * 2 + 1;
-      if (sphereRef.current) {
-        sphereRef.current.rotation.y = THREE.MathUtils.lerp(
-          sphereRef.current.rotation.y,
-          mouseX * 0.06,
-          0.01
-        );
-        sphereRef.current.rotation.x = THREE.MathUtils.lerp(
-          sphereRef.current.rotation.x,
-          -mouseY * 0.06,
-          0.01
-        );
-      }
-    }
-  };
-
   useEffect(() => {
+    let mDown = false;
+
+    const onMouseDown = (event) => {
+      mDown = true;
+      gsap.to(sphereRef.current.scale, {
+        x: 22,
+        y: 22,
+        z: 22,
+        duration: 1,
+        ease: "power2.out",
+      });
+    };
+
+    const onMouseUp = (event) => {
+      mDown = false;
+      gsap.to(sphereRef.current.scale, {
+        x: 27,
+        y: 27,
+        z: 27,
+        duration: 1,
+        ease: "power2.out",
+      });
+    };
+
+    const onMouseMove = (event) => {
+      if (!mDown) {
+        const { clientX, clientY } = event;
+        const { innerWidth, innerHeight } = window;
+        const mouseX = (clientX / innerWidth) * 2 - 1;
+        const mouseY = -(clientY / innerHeight) * 2 + 1;
+        if (sphereRef.current) {
+          sphereRef.current.rotation.y = THREE.MathUtils.lerp(
+            sphereRef.current.rotation.y,
+            mouseX * 0.06,
+            0.01
+          );
+          sphereRef.current.rotation.x = THREE.MathUtils.lerp(
+            sphereRef.current.rotation.x,
+            -mouseY * 0.06,
+            0.01
+          );
+        }
+      }
+    };
+
     window.addEventListener("mousemove", onMouseMove);
     window.addEventListener("mousedown", onMouseDown);
     window.addEventListener("mouseup", onMouseUp);
