@@ -1,10 +1,6 @@
-Here's a draft for your README file based on the information available in your repository:
-
----
-
 # Threespace
 
-Threespace is a React-based project designed to provide a foundation for 3D space exploration and visualization within the browser. This project is bootstrapped with Create React App and leverages modern JavaScript, HTML, and CSS to create an interactive and visually engaging experience.
+Threespace is a React-based project designed to provide a foundation for 3D space exploration and visualization within the browser. This project is bootstrapped with Create React App and leverages modern JavaScript, HTML, and CSS to create an interactive and visually engaging experience. View this website  [three.aayushparmar.com]here
 
 ## Features
 
@@ -61,14 +57,7 @@ This command will generate the production files in the `build` directory, ready 
 
 Contributions are welcome! If you have ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 For any questions or support, please reach out via the repository's issue tracker.
 
----
-
-Feel free to customize this template further to match the specific details and goals of your project!
