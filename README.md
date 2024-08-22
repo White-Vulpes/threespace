@@ -1,6 +1,6 @@
 # Threespace
 
-Threespace is a React-based project designed to provide a foundation for 3D space exploration and visualization within the browser. This project is bootstrapped with Create React App and leverages modern JavaScript, HTML, and CSS to create an interactive and visually engaging experience. View this website  [three.aayushparmar.com]here
+Threespace is a React-based project designed to provide a foundation for 3D space exploration and visualization within the browser. This project is bootstrapped with Create React App and leverages modern JavaScript, HTML, and CSS to create an interactive and visually engaging experience. View this website at [three.aayushparmar.com](three.aayushparmar.com)
 
 ## Features
 
